@@ -13,6 +13,9 @@
 		8E85BEF41D2ECD0200FEA09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E85BEF21D2ECD0200FEA09F /* Main.storyboard */; };
 		8E85BEF61D2ECD0200FEA09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E85BEF51D2ECD0200FEA09F /* Assets.xcassets */; };
 		8E85BEF91D2ECD0200FEA09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E85BEF71D2ECD0200FEA09F /* LaunchScreen.storyboard */; };
+		8E85BF031D2ECDC500FEA09F /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85BF021D2ECDC500FEA09F /* HTTPService.m */; };
+		8E85BF071D2EED9300FEA09F /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85BF061D2EED9300FEA09F /* VideoCell.m */; };
+		8E85BF0B1D2EF0A700FEA09F /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85BF0A1D2EF0A700FEA09F /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		8E85BEF51D2ECD0200FEA09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E85BEF81D2ECD0200FEA09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E85BEFA1D2ECD0200FEA09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E85BF011D2ECDC500FEA09F /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		8E85BF021D2ECDC500FEA09F /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		8E85BF051D2EED9300FEA09F /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		8E85BF061D2EED9300FEA09F /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		8E85BF091D2EF0A700FEA09F /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		8E85BF0A1D2EF0A700FEA09F /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,9 @@
 		8E85BEE81D2ECD0200FEA09F /* VideoDisplayer */ = {
 			isa = PBXGroup;
 			children = (
+				8E85BF081D2EF09800FEA09F /* Model */,
+				8E85BF041D2EED7E00FEA09F /* View */,
+				8E85BF001D2ECDAA00FEA09F /* Services */,
 				8E85BEEC1D2ECD0200FEA09F /* AppDelegate.h */,
 				8E85BEED1D2ECD0200FEA09F /* AppDelegate.m */,
 				8E85BEEF1D2ECD0200FEA09F /* ViewController.h */,
@@ -77,6 +89,33 @@
 				8E85BEEA1D2ECD0200FEA09F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E85BF001D2ECDAA00FEA09F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E85BF011D2ECDC500FEA09F /* HTTPService.h */,
+				8E85BF021D2ECDC500FEA09F /* HTTPService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8E85BF041D2EED7E00FEA09F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E85BF051D2EED9300FEA09F /* VideoCell.h */,
+				8E85BF061D2EED9300FEA09F /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E85BF081D2EF09800FEA09F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E85BF091D2EF0A700FEA09F /* Video.h */,
+				8E85BF0A1D2EF0A700FEA09F /* Video.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E85BEF11D2ECD0200FEA09F /* ViewController.m in Sources */,
+				8E85BF071D2EED9300FEA09F /* VideoCell.m in Sources */,
+				8E85BF031D2ECDC500FEA09F /* HTTPService.m in Sources */,
+				8E85BF0B1D2EF0A700FEA09F /* Video.m in Sources */,
 				8E85BEEE1D2ECD0200FEA09F /* AppDelegate.m in Sources */,
 				8E85BEEB1D2ECD0200FEA09F /* main.m in Sources */,
 			);
